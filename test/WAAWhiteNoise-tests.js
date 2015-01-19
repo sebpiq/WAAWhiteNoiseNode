@@ -1,4 +1,5 @@
 var assert = require('assert')
+  , _ = require('underscore')
   , utils = require('waatest').utils
   , WAAWhiteNoise = require('../index')
 
@@ -23,9 +24,7 @@ describe('WAAWhiteNoise', function() {
         assert.ok(sample > -1)
         assert.ok(sample < 1)
       }
-      assert.ok(!(channelArray[5] === channelArray[6]
-              === channelArray[7] === channelArray[8]
-              === channelArray[9]))
+      assert.equal(_.uniq(channelArray.slice(5, 10)).length, 5)
       done()
     })
 

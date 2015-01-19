@@ -23,10 +23,12 @@
     "url": "https://github.com/sebpiq/WAAWhiteNoise/issues"
   },
   "homepage": "https://github.com/sebpiq/WAAWhiteNoise",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "mocha": "2.0.x",
     "browserify": "7.0.x",
+    "underscore": "1.7.x",
     "waatest": "git://github.com/sebpiq/WAATest.git#master"
   }
 }
