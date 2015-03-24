@@ -1,5 +1,5 @@
-WAAWhiteNoise
-==============
+WAAWhiteNoiseNode
+==================
 
 A white noise node for Web audio API.
 
@@ -9,7 +9,7 @@ A white noise node for Web audio API.
 Installation
 -------------
 
-You can grab the latest browser build from [dist/](https://github.com/sebpiq/WAAWhiteNoise/blob/master/dist/WAAWhiteNoise-latest.js) or install through npm with `npm install waawhitenoise` 
+You can grab the latest browser build from [dist/](https://github.com/sebpiq/WAAWhiteNoiseNode/blob/master/dist/WAAWhiteNoiseNode-latest.js) or install through npm with `npm install waawhitenoise` 
 
 
 Usage
@@ -19,13 +19,13 @@ Create :
 
 ```javascript
 var context = new AudioContext()
-  , noiseNode = new WAAWhiteNoise(context)
+  , noiseNode = new WAAWhiteNoiseNode(context)
 ```
 
 Connect :
 
 ```javascript
-// `WAAWhiteNoise.connect` takes the same arguments as `AudioNode.connect`
+// `WAAWhiteNoiseNode.connect` takes the same arguments as `AudioNode.connect`
 noiseNode.connect(someOtherNode)
 ```
 

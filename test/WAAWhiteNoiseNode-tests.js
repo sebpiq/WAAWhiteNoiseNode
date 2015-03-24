@@ -1,14 +1,14 @@
 var assert = require('assert')
   , _ = require('underscore')
   , utils = require('waatest').utils
-  , WAAWhiteNoise = require('../index')
+  , WAAWhiteNoiseNode = require('../index')
 
-describe('WAAWhiteNoise', function() {
+describe('WAAWhiteNoiseNode', function() {
   
   it('should generate random values', function(done) {
     var offsetNode
     utils.renderSamples(1, 15, function(context) {
-      var noise = new WAAWhiteNoise(context)
+      var noise = new WAAWhiteNoiseNode(context)
       noise.connect(context.destination)
       noise.start(5 / context.sampleRate)
       noise.stop(10 / context.sampleRate)

@@ -1,3 +1,3 @@
-var WAAWhiteNoise = require('./lib/WAAWhiteNoise')
-module.exports = WAAWhiteNoise
-if (typeof window !== 'undefined') window.WAAWhiteNoise = WAAWhiteNoise
+var WAAWhiteNoiseNode = require('./lib/WAAWhiteNoiseNode')
+module.exports = WAAWhiteNoiseNode
+if (typeof window !== 'undefined') window.WAAWhiteNoiseNode = WAAWhiteNoiseNode

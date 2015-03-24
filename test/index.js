@@ -1,1 +1,1 @@
-require('./WAAWhiteNoise-tests')
+require('./WAAWhiteNoiseNode-tests')
